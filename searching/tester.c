@@ -13,7 +13,7 @@ int binarySearch(int *a, int k, int h, int l)
 {
     if (l <= h)
     {
-        int mid = l + (h + l) / 2;
+        int mid = l + (h - l) / 2;
         if (a[mid] == k)
             return mid;
         else if (a[mid] > k)
