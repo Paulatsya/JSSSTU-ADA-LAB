@@ -1,0 +1,27 @@
+
+>>04 String Match
+    text=all same letters"aaaaa" 
+    Worst:- O(nm) //n:text length m:pat length
+        pattern where last letter is wrong(pat[m-1]=wrong)
+    Best:- O(m)
+        pattern where all same letters as text
+    Avg:- 
+        pat=97 + rand()%3
+>>06 Quick Sort
+    Worst:- O(n^2) 
+        Sorted array
+    Best:- O(nlogn)
+        array of same number (testcase may not be correct)
+    Avg:- RANDOM
+>>12 warshallFloyd
+    warshall used to find tranisitive closure
+        O(v^3)
+    floyd used to find shortest path
+        O(v^3)
+
+>>14 Prims
+    For MST
+    O(v^2)
+>>15 Dijkstras
+    used to find shortest path to all other vertices 
+    O(v^2)
