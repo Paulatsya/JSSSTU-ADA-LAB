@@ -30,6 +30,9 @@
     Best:- O(nlogn)
         array of same number (testcase may not be correct)
     Avg:- RANDOM
+>>07 DFS
+    O(v^2)
+    sparse graph (i!=j) value 1
 >>12 warshallFloyd
     warshall used to find tranisitive closure
         O(v^3)
