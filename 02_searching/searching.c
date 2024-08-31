@@ -27,7 +27,7 @@ int binarySearch(int *arr, int k, int l, int h)
         }
         else
         {
-            return binarySearch(arr, k, mid + 1, l);
+            return binarySearch(arr, k, mid + 1, h);
         }
     }
     return -1;

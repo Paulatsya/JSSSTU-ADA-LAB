@@ -15,29 +15,7 @@ void createGraph()
         }
     }
 }
-
-void bfs(int start){
-    visited[start]=1;
-    queue[++r]=start;
-    printf("%d-->",start);
-    while(f<=r){
-        int current = queue[f++]; //store the current node and dequeue
-        for (int i = 0; i < n; i++)
-        {
-            if(adjMat[current][i] && !visited[i]){
-                queue[++r]=i;
-                visited[i]=1;
-            }
-            else if (adjMat[current][i] && visited[i])
-            {
-                isAcyclic=0;
-            }
-            
-        }
-        
-    }
-}
-void bfs1(int start) {
+void bfs(int start) {
     
     visited[start] = 1; // Mark start node as visited
     queue[++r] = start; // Enqueue the start node
@@ -66,7 +44,7 @@ int main()
 
     createGraph();
 
-    bfs1(0);
+    bfs(0);
 
     for (i = 0; i < n; i++)
     {

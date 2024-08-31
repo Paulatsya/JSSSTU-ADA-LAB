@@ -69,7 +69,7 @@ void plotterB()
     while (n <= 1000)
     {
         int *arr=(int *)malloc(sizeof(int)*n);
-        // worst case bubble--> descending order
+        // best case bubble--> sorted array
         for (int i = 0; i < n; i++)
         {
             arr[i] = i + 1;
@@ -83,10 +83,10 @@ void plotterB()
         }
         c = bubbleSort(arr, n);
         fprintf(f2, "%d\t%d\n", n, c);
-        // best case bubble--> sorted array
+        // worst case bubble--> descending order
         for (int i = 0; i < n; i++)
         {
-            arr[i] = i + 1;
+            arr[i] = n-i;
         }
         c = bubbleSort(arr, n);
         fprintf(f3, "%d\t%d\n", n, c);
@@ -110,7 +110,7 @@ void plotterI()
     while (n <= 1000)
     {
         int *arr=(int *)malloc(sizeof(int)*n);
-        // worst case insertion--> descending order
+        // best case insertion--> sorted array
         for (int i = 0; i < n; i++)
         {
             arr[i] = i + 1;
@@ -124,10 +124,10 @@ void plotterI()
         }
         c = insertionSort(arr, n);
         fprintf(f2, "%d\t%d\n", n, c);
-        // best case insertion--> sorted array
+        // worst case insertion--> descending order
         for (int i = 0; i < n; i++)
         {
-            arr[i] = i + 1;
+            arr[i] = n-i;
         }
         c = insertionSort(arr, n);
         fprintf(f3, "%d\t%d\n", n, c);

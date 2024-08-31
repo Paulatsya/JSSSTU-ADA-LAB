@@ -1,4 +1,21 @@
-
+>>01 GCD
+    euclids O(log(min(a,b)))
+    modified O(log(min(a,b)))
+    consec O(log(max(ai))); 
+        plotter same for all (generate values for j and k)
+>>02 searching
+    ls 
+        best case:- O(1)--> first element in list
+        worst case:- O(n)--> element not found
+    bs 
+        best case:- O(1)--> middle elemet is key
+        worst case:- O(logn)--> sorted list and key not in list
+>>03 sorting
+    bubbleSort && Insertion Sort 
+        BestCase O(n)-->Sorted array
+        WorstCase O(n^2)--> decending order
+    Selection Sort
+        OneCase O(n^2)
 >>04 String Match
     text=all same letters"aaaaa" 
     Worst:- O(nm) //n:text length m:pat length
