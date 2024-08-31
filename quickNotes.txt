@@ -45,3 +45,12 @@
 >>15 Dijkstras
     used to find shortest path to all other vertices 
     O(v^2)
+
+gnuplot
+set title "Search Analysis"
+set xlabel "Input Size"
+set ylabel "Operation Count"
+set style data line
+set xrange [10:1000]
+set yrange [10:1000]
+plot "b.txt" using 1:2 title "Best Case", "a.txt" using 1:2 title "Average Case", "w.txt" using 1:2 title "Worst Case"
